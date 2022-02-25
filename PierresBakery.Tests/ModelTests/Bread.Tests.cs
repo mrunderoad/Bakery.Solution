@@ -12,13 +12,21 @@ namespace PierresBakery.Tests
     public void BreadMaker_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread(1, 3);
+
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
-    // [TestMethod]
-    // public void 
-    // {
+    [TestMethod]
+    public void GetBread_ReturnsBreadCost_Int()
+    {
+      int breadCost = 3;
+      int breadNum = 1;
+      Bread newBread = new Bread(breadCost, breadNum);
 
-    // }
+      int returnedBread = newBread.BreadCost;
+
+      Assert.AreEqual(returnedBread, breadCost);
+
+    }
   }
 }

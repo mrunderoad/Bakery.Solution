@@ -5,13 +5,12 @@ namespace PierresBakery
 {
   public class Pastry
   {
-    public int PastryPrice { get; }
+    public int PastryCost { get; }
     public int PastryNum { get; }
-    public Pastry(int pastryPrice, int pastryNum)
+    public Pastry(int pastryCost, int pastryNum)
     {
-      PastryPrice = 4;
+      PastryCost = 4;
       PastryNum = pastryNum;
-
     }
   }
 }
