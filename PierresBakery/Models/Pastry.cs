@@ -37,10 +37,10 @@ namespace PierresBakery
       {
         return pastryCost = 9;
       }
-      // else if (PastryNum == 6)
-      // {
-      //   return pastryCost = 10;
-      // }
+      else if (PastryNum == 6)
+      {
+        return pastryCost = 10;
+      }
       else
       {
         return 0;
