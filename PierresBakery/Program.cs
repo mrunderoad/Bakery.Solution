@@ -16,7 +16,7 @@ class Program
       if (check == "Y")
       {
         Console.WriteLine("------------------------------------------------------");
-        Console.WriteLine("Our offers today are fresh Rolls, fresh Scones and fresh Cookies!");
+        Console.WriteLine("Our offers today are fresh Rolls, fresh Scones, fresh Cookies and freshly baked Cake!");
         Console.WriteLine("------------------------------------------------------");
         Console.WriteLine("How many rolls would you like to purchase?");
         string rollPurchased = Console.ReadLine();
@@ -47,9 +47,20 @@ class Program
           Start();
         }
         Console.WriteLine("Cookies Added to Cart");
+        Console.WriteLine("------------------------------------------------------");
+        Console.WriteLine("How many Cakes would you like to purchase?");
+        string cakePurchased = Console.ReadLine();
+        int CakeNum = int.Parse(cakePurchased);
+        if (CakeNum >= 51)
+        {
+          Console.WriteLine("We have a limit of 50 Cakes per customer. Save some Cake for the rest of our customers! Please restart your order.");
+          Start();
+        }
+        Console.WriteLine("Cakes Added to Cart");
         Bread newBread = new Bread(5, BreadNum);
         Pastry newPastry = new Pastry(2, PastryNum);
         Cookie newCookie = new Cookie(3, CookieNum);
+        Cake newCake = new Cake(15, CakeNum);
         Console.WriteLine("------------------------------------------------------");
         Console.WriteLine("Here are the items in your cart: ");
         Console.WriteLine($"Rolls: {BreadNum}");
@@ -58,17 +69,19 @@ class Program
         Console.WriteLine($"Scones cost: ${newPastry.GetPastryPrice()}.00");
         Console.WriteLine($"Cookies: {CookieNum}");
         Console.WriteLine($"Cookies cost: ${newCookie.GetCookieCost()}.00");
-        if (newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() >= 300)
+        Console.WriteLine($"Cakes: {CakeNum}");
+        Console.WriteLine($"Cakes cost: ${newCake.GetCakeCost()}.00");
+        if (newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost() >= 400)
         {
           Console.WriteLine("------------------------------------------------------");
-          Console.WriteLine("You're eligable for a half off discount for your order over $300!");
-          Console.WriteLine($"Your discounted total cost is: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() % 2}");
+          Console.WriteLine("You're eligable for a half off discount for your order over $400!");
+          Console.WriteLine($"Your discounted total cost is: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost() % 2}");
           End();
         }
         else
         {
           Console.WriteLine("------------------------------------------------------");
-          Console.WriteLine($"Total cost: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost()}.00");
+          Console.WriteLine($"Total cost: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost()}.00");
           End();
         }
       }
