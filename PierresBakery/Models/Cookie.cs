@@ -25,6 +25,10 @@ namespace PierresBakery.Models
       {
         return CookieCost = 6;
       }
+      else if (CookieNum == 10)
+      {
+        return CookieCost = 10;
+      }
       else
       {
         return CookieNum * 3;
