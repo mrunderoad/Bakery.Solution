@@ -15,7 +15,16 @@ namespace PierresBakery.Models
 
     public int GetCookieCost()
     {
-      return 9;
+      int CookieCost = 3;
+
+      if (CookieNum == 1)
+      {
+        return CookieCost = 5;
+      }
+      else
+      {
+        return CookieNum * 3;
+      }
     }    
   }
 }

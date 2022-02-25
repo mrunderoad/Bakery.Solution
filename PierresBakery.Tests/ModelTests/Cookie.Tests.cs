@@ -24,5 +24,16 @@ namespace PierresBakery.Tests
       int returnedCookie = newCookie.CookieCost;
       Assert.AreEqual(returnedCookie, cookieCost);
     }
+
+    [TestMethod]
+    public void GetCookie_ReturnsCostOfOneCookie_Int()
+    {
+      int cookieCost = 3;
+      int cookieNum = 1;
+      Cookie newCookie = new Cookie(cookieCost, cookieNum);
+      int expectedCost = 3;
+      int cost = newCookie.GetCookieCost();
+      Assert.AreEqual(expectedCost, cost);
+    }
   }
 }

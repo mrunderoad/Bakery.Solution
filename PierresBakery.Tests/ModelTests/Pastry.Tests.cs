@@ -29,11 +29,11 @@ namespace PierresBakery.Tests
     public void GetPastry_ReturnsCostOfOnePastry_Int()
     {
       int pastryCost = 2;
-      int pastryNum = 0;
+      int pastryNum = 1;
       Pastry newPastry = new Pastry(pastryCost, pastryNum);
-      int noCost = 0;
+      int expectedCost = 2;
       int cost = newPastry.GetPastryPrice();
-      Assert.AreEqual(noCost, cost);
+      Assert.AreEqual(expectedCost, cost);
     }
 
     [TestMethod]
