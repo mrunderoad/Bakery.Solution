@@ -17,16 +17,26 @@ class Program
         if (check == "Y")
         {
           Console.WriteLine("-----------------------------------");
-          Console.WriteLine("Our offers today are a fresh Roll or a fresh Scone!");
+          Console.WriteLine("Our offers today are fresh Rolls and fresh Scones!");
           Console.WriteLine("-----------------------------------");
           Console.WriteLine("How many rolls would you like to purchase?");
           string rollPurchased = Console.ReadLine();
           int BreadNum = int.Parse(rollPurchased);
+          if (BreadNum >= 100)
+          {
+            Console.WriteLine("Save some Rolls for the rest of our customers!");
+            Start();
+          }
           Console.WriteLine("Roll Added to Cart");
           Console.WriteLine("-----------------------------------");
           Console.WriteLine("How many Scones would you like to purchase?");
           string sconePurchased = Console.ReadLine();
           int PastryNum = int.Parse(sconePurchased);
+          if (PastryNum >= 100)
+          {
+            Console.WriteLine("Save some Scones for the rest of our customers!");
+            Start();
+          }
           Console.WriteLine("Scone Added to Cart");
           Bread newBread = new Bread(5, BreadNum);
           Pastry newPastry = new Pastry(2, PastryNum);

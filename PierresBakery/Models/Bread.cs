@@ -33,7 +33,6 @@ namespace PierresBakery.Models
       {
         return BreadNum * 5;
       }
-      
     }    
   }
 }

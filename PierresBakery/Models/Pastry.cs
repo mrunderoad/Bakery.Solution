@@ -49,10 +49,3 @@ namespace PierresBakery.Models
   }
 }
 
-//One pastry = 2
-//Two pastry = 3
-//three pastry = 5
-//four pastry = 7
-//five pastry = 9
-//six pastry = 10
-
