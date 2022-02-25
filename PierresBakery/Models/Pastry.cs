@@ -15,35 +15,35 @@ namespace PierresBakery
 
     public int GetPastryPrice()
     {
-      int pastryCost = 2;
+      int PastryCost = 2;
 
       if (PastryNum == 1)
       {
-        return pastryCost = 2;
+        return PastryCost = 2;
       }
       else if (PastryNum == 2)
       {
-        return pastryCost = 3;
+        return PastryCost = 3;
       }
       else if (PastryNum == 3)
       {
-        return pastryCost = 5;
+        return PastryCost = 5;
       }
       else if (PastryNum == 4)
       {
-        return pastryCost = 7;
+        return PastryCost = 7;
       }
       else if (PastryNum == 5)
       {
-        return pastryCost = 9;
+        return PastryCost = 9;
       }
       else if (PastryNum == 6)
       {
-        return pastryCost = 10;
+        return PastryCost = 10;
       }
       else
       {
-        return 0;
+        return PastryNum * 2;
       }
     }
   }
