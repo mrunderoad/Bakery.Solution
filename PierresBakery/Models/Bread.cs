@@ -19,20 +19,21 @@ namespace PierresBakery.Models
 
       if (BreadNum == 1)
       {
-        return BreadCost = 5;
+        BreadCost = 5;
       }
       else if (BreadNum == 2)
       {
-        return BreadCost = 10;
+        BreadCost = 10;
       }
       else if (BreadNum == 3)
       {
-        return BreadCost = 10;
+        BreadCost = 10;
       }
       else
       {
         return BreadNum * 5;
       }
+      return BreadCost;
     }    
   }
 }

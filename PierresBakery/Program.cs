@@ -22,9 +22,9 @@ class Program
           Console.WriteLine("How many rolls would you like to purchase?");
           string rollPurchased = Console.ReadLine();
           int BreadNum = int.Parse(rollPurchased);
-          if (BreadNum >= 100)
+          if (BreadNum >= 101)
           {
-            Console.WriteLine("We have a limit of 99 Rolls per customer. Save some Rolls for the rest of our customers!");
+            Console.WriteLine("We have a limit of 100 Rolls per customer. Save some Rolls for the rest of our customers!");
             Start();
           }
           Console.WriteLine("Roll Added to Cart");
@@ -32,9 +32,9 @@ class Program
           Console.WriteLine("How many Scones would you like to purchase?");
           string sconePurchased = Console.ReadLine();
           int PastryNum = int.Parse(sconePurchased);
-          if (PastryNum >= 100)
+          if (PastryNum >= 101)
           {
-            Console.WriteLine("We have a limit of 99 Scones per customer. Save some Scones for the rest of our customers!");
+            Console.WriteLine("We have a limit of 100 Scones per customer. Save some Scones for the rest of our customers!");
             Start();
           }
           Console.WriteLine("Scone Added to Cart");
@@ -42,9 +42,9 @@ class Program
           Console.WriteLine("How many Cookies would you like to purchase?");
           string cookiePurchased = Console.ReadLine();
           int CookieNum = int.Parse(cookiePurchased);
-          if (CookieNum >= 200)
+          if (CookieNum >= 201)
           {
-            Console.WriteLine("We have a limit of 199 Cookies per customer. Save some Cookies for the rest of our customers!");
+            Console.WriteLine("We have a limit of 200 Cookies per customer. Save some Cookies for the rest of our customers!");
           }
           Bread newBread = new Bread(5, BreadNum);
           Pastry newPastry = new Pastry(2, PastryNum);

@@ -19,32 +19,33 @@ namespace PierresBakery.Models
 
       if (PastryNum == 1)
       {
-        return PastryCost = 2;
+        PastryCost = 2;
       }
       else if (PastryNum == 2)
       {
-        return PastryCost = 3;
+        PastryCost = 3;
       }
       else if (PastryNum == 3)
       {
-        return PastryCost = 5;
+        PastryCost = 5;
       }
       else if (PastryNum == 4)
       {
-        return PastryCost = 7;
+        PastryCost = 7;
       }
       else if (PastryNum == 5)
       {
-        return PastryCost = 9;
+        PastryCost = 9;
       }
       else if (PastryNum == 6)
       {
-        return PastryCost = 10;
+        PastryCost = 10;
       }
       else
       {
         return PastryNum * 2;
       }
+      return PastryCost;
     }
   }
 }
