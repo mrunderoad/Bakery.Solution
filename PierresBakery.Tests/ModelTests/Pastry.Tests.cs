@@ -1,16 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using PierresBakery.Models;
+using System.Collections.Generic;
+using System;
 
-namespace ProjectName.Tests
+namespace PierresBakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class PastryTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void PastryMaker_CreatesInstanceOfPastry_Pastry()
     {
-     
-      // Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+     Pastry newPastry = new Pastry(1, 4);
+     Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
   }
 }
