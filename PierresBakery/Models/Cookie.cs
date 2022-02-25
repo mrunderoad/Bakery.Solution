@@ -9,7 +9,7 @@ namespace PierresBakery.Models
     public int CookieNum { get; }
     public Cookie(int cookieCost, int cookieNum)
     {
-      CookieCost = 6;
+      CookieCost = 3;
       CookieNum = cookieNum;
     }
 
