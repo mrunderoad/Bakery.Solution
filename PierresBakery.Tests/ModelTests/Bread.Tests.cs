@@ -12,7 +12,6 @@ namespace PierresBakery.Tests
     public void BreadMaker_CreatesInstanceOfBread_Bread()
     {
       Bread newBread = new Bread(1, 3);
-
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
@@ -22,9 +21,7 @@ namespace PierresBakery.Tests
       int breadCost = 5;
       int breadNum = 1;
       Bread newBread = new Bread(breadCost, breadNum);
-
       int returnedBread = newBread.BreadCost;
-
       Assert.AreEqual(returnedBread, breadCost);
     }
 
@@ -35,9 +32,7 @@ namespace PierresBakery.Tests
       int breadNum = 0;
       Bread newBread = new Bread(breadCost, breadNum);
       int noCost = 0;
-
       int cost = newBread.GetBreadCost();
-
       Assert.AreEqual(noCost, cost);
     }
 
@@ -48,9 +43,7 @@ namespace PierresBakery.Tests
       int breadNum = 2;
       Bread newBread = new Bread(breadCost, breadNum);
       int expectedCost = 10;
-
       int cost = newBread.GetBreadCost();
-
       Assert.AreEqual(expectedCost, cost);
     }
 
@@ -61,9 +54,7 @@ namespace PierresBakery.Tests
       int breadNum = 3;
       Bread newBread = new Bread(breadCost, breadNum);
       int expectedCost = 10;
-
       int cost = newBread.GetBreadCost();
-
       Assert.AreEqual(expectedCost, cost);
     }
   }
