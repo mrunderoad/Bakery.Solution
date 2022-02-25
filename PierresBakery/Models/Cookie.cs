@@ -23,7 +23,7 @@ namespace PierresBakery.Models
       }
       else if (CookieNum == 5)
       {
-        return CookieCost = 0;
+        return CookieCost = 6;
       }
       else
       {
