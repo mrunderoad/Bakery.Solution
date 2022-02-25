@@ -19,7 +19,7 @@ namespace PierresBakery.Models
       }
       else if (CakeNum == 3)
       {
-        CakeCost = 15;
+        CakeCost = 30;
       }
       else
       {
