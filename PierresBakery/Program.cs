@@ -52,15 +52,25 @@ class Program
           Console.WriteLine("-----------------------------------");
           Console.WriteLine("Here are the items in your cart: ");
           Console.WriteLine($"Rolls: {BreadNum}");
-          Console.WriteLine($"Rolls cost: ${newBread.GetBreadCost()}");
+          Console.WriteLine($"Rolls cost: ${newBread.GetBreadCost()}.00");
           Console.WriteLine($"Scones: {PastryNum}");
-          Console.WriteLine($"Scones cost: ${newPastry.GetPastryPrice()}");
+          Console.WriteLine($"Scones cost: ${newPastry.GetPastryPrice()}.00");
           Console.WriteLine($"Cookies: {CookieNum}");
-          Console.WriteLine($"Cookies cost: ${newCookie.GetCookieCost()}");
-          Console.WriteLine("-----------------------------------");
-          Console.WriteLine($"Total cost: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost()}");
-          End();
+          Console.WriteLine($"Cookies cost: ${newCookie.GetCookieCost()}.00");
+          if (newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() >= 300)
+          {
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("You're eligable for a half off discount for your order over $300!");
+            Console.WriteLine($"Your discounted total cost is: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() % 2}");
+            End();
           }
+          else
+          {
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine($"Total cost: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost()}.00");
+            End();
+          }
+        }
         else if (check == "N")
         {
           Console.WriteLine("-----------------------------------");
