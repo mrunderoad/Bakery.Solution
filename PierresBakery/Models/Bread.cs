@@ -12,8 +12,10 @@ namespace PierresBakery.Models
       BreadCost = 3;
       BreadNum = breadNum;
     }
-    
-  }
 
-  
+    public int GetBreadCost()
+    {
+      return 6;
+    }    
+  }
 }

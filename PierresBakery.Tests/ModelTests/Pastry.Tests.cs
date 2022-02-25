@@ -25,7 +25,6 @@ namespace PierresBakery.Tests
       int returnedPastry = newPastry.PastryCost;
 
       Assert.AreEqual(returnedPastry, pastryCost);
-
     }
   }
 }

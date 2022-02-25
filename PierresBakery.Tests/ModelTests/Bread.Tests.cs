@@ -26,7 +26,19 @@ namespace PierresBakery.Tests
       int returnedBread = newBread.BreadCost;
 
       Assert.AreEqual(returnedBread, breadCost);
+    }
 
+    [TestMethod]
+    public void GetBread_ReturnsCostOfZeroBreads_Int()
+    {
+      int breadCost = 3;
+      int breadNum = 0;
+      Bread newBread = new Bread(breadCost, breadNum);
+      int noCost = 0;
+
+      int cost = newBread.GetBreadCost();
+
+      Assert.AreEqual(noCost, cost);
     }
   }
 }
