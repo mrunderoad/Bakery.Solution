@@ -8,5 +8,19 @@ namespace PierresBakery.Models
       CakeCost = 15;
       CakeNum = cakeNum;
     }
+
+    public int GetCakeCost()
+    {
+      int CakeCost = 15;
+
+      if (CakeNum == 1)
+      {
+        return CakeCost = 0;
+      }
+      else
+      {
+        return CakeNum * 15;
+      }
+    }
   }
 }
