@@ -15,12 +15,13 @@ namespace PierresBakery.Models
 
       if (CakeNum == 1)
       {
-        return CakeCost = 0;
+        CakeCost = 15;
       }
       else
       {
         return CakeNum * 15;
       }
+      return CakeCost;
     }
   }
 }
