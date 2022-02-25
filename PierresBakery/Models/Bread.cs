@@ -15,17 +15,25 @@ namespace PierresBakery.Models
 
     public int GetBreadCost()
     {
-      if (BreadNum >= 0)
+      int breadCost = 5;
+
+      if (BreadNum == 1)
       {
-        int noDeal = (BreadNum % 3);
-        int numDeals = (BreadNum - (noDeal))/3;
-        int getDeals = ((BreadNum - noDeal) - numDeals);
-        return (getDeals + noDeal) * BreadCost;
+        return breadCost = 5;
+      }
+      else if (BreadNum == 2)
+      {
+        return breadCost = 10;
+      }
+      else if (BreadNum == 3)
+      {
+        return breadCost = 10;
       }
       else
       {
-      return 0;
+        return breadCost = 0;
       }
+      
     }    
   }
 }
