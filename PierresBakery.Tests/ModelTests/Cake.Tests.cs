@@ -33,5 +33,16 @@ namespace PierresBakery.Tests
       int cost = newCake.GetCakeCost();
       Assert.AreEqual(expectedCost, cost);
     }
+
+    [TestMethod]
+    public void GetCake_ReturnsCostOfThreeCakes_INt()
+    {
+      int cakeCost = 15;
+      int cakeNum = 3;
+      Cake newCake = new Cake(cakeCost, cakeNum);
+      int expectedCost = 30;
+      int cost = newCake.GetCakeCost();
+      Assert.AreEqual(expectedCost, cost);
+    }
   }
 }
