@@ -18,7 +18,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetPastry_ReturnsPastryCost_Int()
     {
-      int pastryCost = 4;
+      int pastryCost = 2;
       int pastryNum = 1;
       Pastry newPastry = new Pastry(pastryCost, pastryNum);
 

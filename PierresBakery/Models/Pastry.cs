@@ -9,7 +9,7 @@ namespace PierresBakery
     public int PastryNum { get; }
     public Pastry(int pastryCost, int pastryNum)
     {
-      PastryCost = 4;
+      PastryCost = 2;
       PastryNum = pastryNum;
     }
   }

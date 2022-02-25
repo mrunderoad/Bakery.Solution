@@ -9,13 +9,13 @@ namespace PierresBakery.Models
     public int BreadNum { get; }
     public Bread(int breadCost, int breadNum)
     {
-      BreadCost = 3;
+      BreadCost = 5;
       BreadNum = breadNum;
     }
 
     public int GetBreadCost()
     {
-      return 6;
+      
     }    
   }
 }

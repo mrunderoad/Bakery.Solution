@@ -19,7 +19,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBread_ReturnsBreadCost_Int()
     {
-      int breadCost = 3;
+      int breadCost = 5;
       int breadNum = 1;
       Bread newBread = new Bread(breadCost, breadNum);
 
@@ -31,7 +31,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void GetBread_ReturnsCostOfZeroBreads_Int()
     {
-      int breadCost = 3;
+      int breadCost = 5;
       int breadNum = 0;
       Bread newBread = new Bread(breadCost, breadNum);
       int noCost = 0;
