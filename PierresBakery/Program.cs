@@ -10,7 +10,7 @@ class Program
     Start();
     static void Start()
     {
-      Console.WriteLine("-------------------------------------------------");
+      Console.WriteLine("---------------------------------------------------------------------------");
       Console.WriteLine("Would you like to get started with an order?(Y/N) Or type S for a surprise!");
       string check = Console.ReadLine().ToUpper();
       if (check == "Y")
@@ -26,7 +26,7 @@ class Program
           Console.WriteLine("We have a limit of 100 Rolls per customer. Save some Rolls for the rest of our customers! Please restart your order.");
           Start();
         }
-        Console.WriteLine("Rolls Added to Cart");
+        Console.WriteLine("Rolls Added to Cart!");
         Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------------------------");
         Console.WriteLine("How many Scones would you like to purchase? Scones are 1 for $2, 2 for $3, 3 for $5, 4 for $7, 5 for $9 or 6 for $10. Maximum amount to order is 100.");
         string sconePurchased = Console.ReadLine();
@@ -36,7 +36,7 @@ class Program
           Console.WriteLine("We have a limit of 100 Scones per customer. Save some Scones for the rest of our customers! Please restart your order.");
           Start();
         }
-        Console.WriteLine("Scones Added to Cart");
+        Console.WriteLine("Scones Added to Cart!");
         Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------");
         Console.WriteLine("How many Cookies would you like to purchase? Cookies are 1 for $3, 5 for $6 or 10 for $15. Maximum amount to order is 200.");
         string cookiePurchased = Console.ReadLine();
@@ -46,7 +46,7 @@ class Program
           Console.WriteLine("We have a limit of 200 Cookies per customer. Save some Cookies for the rest of our customers! Please restart your order.");
           Start();
         }
-        Console.WriteLine("Cookies Added to Cart");
+        Console.WriteLine("Cookies Added to Cart!");
         Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
         Console.WriteLine("How many Cakes would you like to purchase? Cakes are 1 for $15 or 3 for $30. Maximum amount to order is 50.");
         string cakePurchased = Console.ReadLine();
@@ -56,7 +56,7 @@ class Program
           Console.WriteLine("We have a limit of 50 Cakes per customer. Save some Cake for the rest of our customers! Please restart your order.");
           Start();
         }
-        Console.WriteLine("Cakes Added to Cart");
+        Console.WriteLine("Cakes Added to Cart!");
         Bread newBread = new Bread(5, BreadNum);
         Pastry newPastry = new Pastry(2, PastryNum);
         Cookie newCookie = new Cookie(3, CookieNum);
@@ -92,7 +92,7 @@ class Program
       }
       else if (check == "S")
       {                                                                                
-        Console.Title = "art";
+        Console.Title = "console art";
         string title = @"
            _____ _                           ____        _                   _ 
           |  __ (_)                         |  _ \      | |                 | |
