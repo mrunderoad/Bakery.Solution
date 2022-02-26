@@ -48,7 +48,7 @@ class Program
         }
         Console.WriteLine("Cookies Added to Cart!");
         Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
-        Console.WriteLine("How many Cakes would you like to purchase? Cakes are 1 for $15 or 3 for $30. Maximum amount to order is 50.");
+        Console.WriteLine("How many Cakes would you like to purchase? Cakes are 1 for $15 or 3 for $30(Buy two get one free!). Maximum amount to order is 50.");
         string cakePurchased = Console.ReadLine();
         int CakeNum = int.Parse(cakePurchased);
         if (CakeNum >= 51)
