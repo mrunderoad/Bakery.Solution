@@ -89,6 +89,7 @@ class Program
       {
         Console.WriteLine("------------------------------------------------------------------");
         Console.WriteLine("Sorry we couldnt help you with your Bakery needs. Come back again!");
+        Console.WriteLine("------------------------------------------------------------------");
       }
       else if (check == "S")
       {                                                                                
