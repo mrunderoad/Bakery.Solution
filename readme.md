@@ -18,4 +18,8 @@ _This is a console application for **Pierres Bakery** to give prices and discoun
 * _Once in the test directory use `dotnet test` in the command line to run tests and see results._
 * _To view the project in action, go back to the root of the project using `cd ..` (Only if you are still in the test directory) then use `cd PierresBakery` to enter the directory and run `dotnet run` to start the project in the terminal._
 
+## Copyright & Licensing
+
+_[MIT](https://opensource.org/licenses/MIT) licensing (c) 2022 Isaac Overstreet_
+
 
