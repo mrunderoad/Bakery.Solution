@@ -11,7 +11,7 @@ class Program
     static void Start()
     {
       Console.WriteLine("-------------------------------------------------");
-      Console.WriteLine("Would you like to get started with an order?(Y/N)");
+      Console.WriteLine("Would you like to get started with an order?(Y/N) Or type S for a surprise!");
       string check = Console.ReadLine().ToUpper();
       if (check == "Y")
       {
@@ -89,6 +89,20 @@ class Program
       {
         Console.WriteLine("------------------------------------------------------------------");
         Console.WriteLine("Sorry we couldnt help you with your Bakery needs. Come back again!");
+      }
+      else if (check == "S")
+      {                                                                                
+        Console.Title = "art";
+        string title = @"
+         _                        _ 
+        | |                      | |
+        | |__  _ __ ___  __ _  __| |
+        | '_ \| '__/ _ \/ _` |/ _` |
+        | |_) | | |  __/ (_| | (_| |
+        |_.__/|_|  \___|\__,_|\__,_|
+          ";
+        Console.WriteLine(title);  
+        Start();                      
       }
       else
       {
