@@ -28,7 +28,7 @@ namespace PierresBakery.Models
       }
       else
       {
-        return BreadNum * 5;
+        return BreadNum * 5 - 5;
       }
       return BreadCost;
     }    
