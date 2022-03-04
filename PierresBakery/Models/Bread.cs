@@ -14,7 +14,11 @@ namespace PierresBakery.Models
     {
       int BreadCost = 5;
 
-      if (BreadNum == 1)
+      if (BreadNum == 0)
+      {
+        BreadCost = 0;
+      }
+      else if (BreadNum == 1)
       {
         BreadCost = 5;
       }
