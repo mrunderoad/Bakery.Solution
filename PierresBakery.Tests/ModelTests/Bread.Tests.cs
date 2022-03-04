@@ -99,6 +99,6 @@ namespace PierresBakery.Tests
       int cost = newBread.GetBreadCost();
       Assert.AreEqual(expectedCost, cost);
     }
-
+    
   }
 }
