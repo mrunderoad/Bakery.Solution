@@ -64,24 +64,24 @@ class Program
         Console.WriteLine("---------------------------------");
         Console.WriteLine("Here are the items in your cart: ");
         Console.WriteLine($"Rolls: {BreadNum}");
-        Console.WriteLine($"Rolls cost: ${newBread.GetBreadCost()}.00");
+        Console.WriteLine($"Rolls cost: ${newBread.GetBreadCost(BreadNum)}.00");
         Console.WriteLine($"Scones: {PastryNum}");
         Console.WriteLine($"Scones cost: ${newPastry.GetPastryPrice()}.00");
         Console.WriteLine($"Cookies: {CookieNum}");
         Console.WriteLine($"Cookies cost: ${newCookie.GetCookieCost()}.00");
         Console.WriteLine($"Cakes: {CakeNum}");
         Console.WriteLine($"Cakes cost: ${newCake.GetCakeCost()}.00");
-        if (newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost() >= 400)
+        if (newBread.GetBreadCost(BreadNum) + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost() >= 400)
         {
           Console.WriteLine("-----------------------------------------------------------------");
           Console.WriteLine("You're eligable for a half off discount for your order over $400!");
-          Console.WriteLine($"Your discounted total cost is: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost() % 2}");
+          Console.WriteLine($"Your discounted total cost is: ${newBread.GetBreadCost(BreadNum) + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost() % 2}");
           End();
         }
         else
         {
           Console.WriteLine("---------------------");
-          Console.WriteLine($"Total cost: ${newBread.GetBreadCost() + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost()}.00");
+          Console.WriteLine($"Total cost: ${newBread.GetBreadCost(BreadNum) + newPastry.GetPastryPrice() + newCookie.GetCookieCost() + newCake.GetCakeCost()}.00");
           End();
         }
       }

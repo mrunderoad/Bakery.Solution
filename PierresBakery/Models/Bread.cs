@@ -10,31 +10,13 @@ namespace PierresBakery.Models
       BreadNum = breadNum;
     }
 
-    public int GetBreadCost()
+    public int GetBreadCost(int BreadNum)
     {
-      int BreadCost = 5;
-
-      if (BreadNum == 0)
+      if (BreadNum >= 3)
       {
-        BreadCost = 0;
+        BreadNum = (BreadNum / 3) * 2 + BreadNum % 3;
       }
-      else if (BreadNum == 1)
-      {
-        BreadCost = 5;
-      }
-      else if (BreadNum == 2)
-      {
-        BreadCost = 10;
-      }
-      else if (BreadNum == 3)
-      {
-        BreadCost = 10;
-      }
-      else
-      {
-        return BreadNum * 5 - 5;
-      }
-      return BreadCost;
+      return BreadNum * 5;
     }    
   }
 }
